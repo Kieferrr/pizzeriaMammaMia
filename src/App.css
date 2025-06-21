@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*============================= HEADER =============================*/
+
+.header-div {
+    position: relative;
+    height: 30vh;
+    min-height: 150px;
+    background-image: url(./assets/img/Header.jpg);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.header-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* ajusta opacidad aquí */
+    z-index: 0;
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+}
+
+/*============================= NAVBAR =============================*/
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-style {
+    width: 100%;
+    height: 8vh;
+    min-height: 60px;
+    background-color: rgb(28, 28, 29);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-title p {
+    color: whitesmoke;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-buttons button {
+    background-color: rgb(39, 38, 38);
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.navbar-price button {
+    background-color: rgb(39, 38, 38);
+    border: 1px solid rgb(37, 144, 216);
+    color: rgb(37, 144, 216);
+    border-radius: 10px;
+    padding: 5px 15px;
+}
