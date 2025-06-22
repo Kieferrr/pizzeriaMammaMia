@@ -1,3 +1,4 @@
+import { formatPrice } from "../utils/formatPrice"
 
 
 const CardPizza = ({img, name, ingredients, price}) => {
@@ -10,7 +11,7 @@ const CardPizza = ({img, name, ingredients, price}) => {
                     <p>🍕 {ingredients.join(", ")}</p>
                 </div>
                 <div className="card-price">
-                    <p className="price-title">Precio: ${price}<span></span></p>
+                    <p className="price-title">Precio: ${formatPrice(price)}</p>
                     <div className="card-buttons">
                         <button className="more-button">Ver Más 👀</button>
                         <button className="add-button">Añadir 🛒</button>

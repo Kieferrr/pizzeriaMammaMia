@@ -1,4 +1,4 @@
-
+import { formatPrice } from "../utils/formatPrice"
 
 const Navbar = () => {
     const total = 25000;
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-price">
-                <button>🛒 Total: ${total}</button>
+                <button>🛒 Total: ${formatPrice(total)}</button>
             </div>
         </nav>
     )
