@@ -96,6 +96,8 @@
     color: rgb(37, 144, 216);
     border-radius: 10px;
     padding: .3125rem .9375rem;
+    transition: all 0.15s;
+
 }
 
 .navbar-price button:hover {
@@ -162,6 +164,8 @@
     border: 1px solid black;
     padding: .4375rem 1.25rem;
     border-radius: 6px;
+    transition: all 0.15s;
+
 }
 
 .more-button:hover {
@@ -180,6 +184,8 @@
     border: 1px solid rgb(107, 104, 104);
     border-radius: 6px;
     padding: .4375rem 1rem;
+    transition: all 0.15s;
+
 }
 
 .add-button:hover {
