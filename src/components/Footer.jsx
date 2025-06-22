@@ -2,7 +2,9 @@
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className="footer container-fluid">
+            <p>© 2021 - Pizzería Mamma Mia! - Todos los derechos reservados</p>
+        </div>
     )
 }
 

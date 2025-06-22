@@ -8,7 +8,7 @@
 
 .header-div {
     position: relative;
-    height: 30vh;
+    height: 43vh;
     min-height: 150px;
     background-image: url(./assets/img/Header.jpg);
     color: whitesmoke;
@@ -30,6 +30,14 @@
 .title {
     position: relative;
     z-index: 1;
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+
+.title p {
+    font-size: 1.2rem;
 }
 
 /*============================= NAVBAR =============================*/
@@ -84,7 +92,7 @@
     flex-direction: row;
     justify-content: center;
     border-top: 2px solid rgb(247, 205, 18);
-    border-bottom: 2px solid rgb(247, 205, 18);
+    border-bottom: 4px solid rgb(247, 205, 18);
     margin-top: 3.125rem;
     padding: 1.875rem;
 }
@@ -96,7 +104,7 @@
     border: 2px solid rgb(212, 203, 203);
     border-radius: .625rem;
     margin: .625rem .625rem;
-    width: 31%;
+    width: 540px;
     overflow: hidden;
 }
 
@@ -144,4 +152,23 @@
     font-size: 2rem;
     font-weight: bold;
     padding-top: .625rem;
+}
+
+
+/*============================= HEADER =============================*/
+
+
+.footer {
+    height: 8vh;
+    background-color: rgb(28, 28, 29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 0;
+    font-size: 1.2em;
 }
