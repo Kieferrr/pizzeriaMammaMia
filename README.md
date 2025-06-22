@@ -18,5 +18,6 @@ npm run dev
 ```
 5. **Abre el proyecto en tu navegador**
 
-*Autor*
+#### Autor
+
 Nicolás Rivero Kiefer
