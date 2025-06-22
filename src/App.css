@@ -14,6 +14,7 @@
     color: whitesmoke;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid rgb(247, 205, 18);
 }
 
 .header-div::before {
@@ -23,7 +24,8 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* ajusta opacidad aquí */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* ajusta opacidad aquí */
     z-index: 0;
 }
 
@@ -57,6 +59,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar-title p {
     color: whitesmoke;
     margin: 0;
@@ -74,6 +77,17 @@
     color: whitesmoke;
     border-radius: 10px;
     padding: .3125rem .9375rem;
+    transition: all 0.15s;
+}
+
+.navbar-buttons button:hover {
+    background-color: rgb(54, 53, 53);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+}
+
+.navbar-buttons button:active {
+    background-color: rgb(30, 29, 29);
+    transform: scale(0.97);
 }
 
 .navbar-price button {
@@ -82,6 +96,16 @@
     color: rgb(37, 144, 216);
     border-radius: 10px;
     padding: .3125rem .9375rem;
+}
+
+.navbar-price button:hover {
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0 0.25rem 0.75rem rgba(37, 144, 216, 0.2);
+}
+
+.navbar-price button:active {
+    background-color: rgb(28, 27, 27);
+    transform: scale(0.97);
 }
 
 
@@ -119,11 +143,12 @@
     align-items: center;
     border-bottom: 1px solid rgb(212, 203, 203);
     padding-top: .625rem;
+    font-size: 1.1rem;
 }
 
 .ingredients-title {
     color: rgb(150, 145, 145);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .card-buttons {
@@ -139,12 +164,32 @@
     border-radius: 6px;
 }
 
+.more-button:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.more-button:active {
+    background-color: #eaeaea;
+    transform: scale(0.97);
+}
+
 .add-button {
     background-color: rgb(29, 27, 27);
     color: whitesmoke;
     border: 1px solid rgb(107, 104, 104);
     border-radius: 6px;
     padding: .4375rem 1rem;
+}
+
+.add-button:hover {
+    background-color: rgb(45, 43, 43);
+    box-shadow: 0 0.25rem 0.75rem rgba(255, 255, 255, 0.08);
+}
+
+.add-button:active {
+    background-color: rgb(20, 18, 18);
+    transform: scale(0.97);
 }
 
 .price-title {
@@ -155,8 +200,7 @@
 }
 
 
-/*============================= HEADER =============================*/
-
+/*============================= FOOTER =============================*/
 
 .footer {
     height: 8vh;
