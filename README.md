@@ -12,7 +12,7 @@ Este repositorio contiene el proyecto "Pizzería Mamma Mía" de la generación G
 ```bash
 npm install
 ```
-4. **Ejectuta el servidor**
+4. **Ejecuta el servidor**
 ```bash
 npm run dev
 ```
