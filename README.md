@@ -7,8 +7,12 @@ Este repositorio contiene el proyecto "Pizzería Mamma Mía" de la generación G
 1. **Clona el repositorio**
 
 2. **Entra a la carpeta del proyecto**
-
-3. **Instala las depedencias**
+   
+4. **Elegir la rama deseada (el último hito se encuentra en la rama hito2)**
+```bash
+git checkout hito2
+```
+5. **Instala las depedencias**
 ```bash
 npm install
 ```
