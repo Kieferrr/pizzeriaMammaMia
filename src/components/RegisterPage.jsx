@@ -16,26 +16,47 @@ const RegisterPage = () => {
         const trimmedConfirmPassword = confirmPassword.trim();
 
         if (!trimmedEmail || !trimmedPassword || !trimmedConfirmPassword) {
-            alert("Ningún campo puede estar vacío o contener solo espacios");
+            Swal.fire({
+                title: "Completa todos los campos",
+                text: "Ningún campo puede estar vacío o contener solo espacios",
+                icon: "warning",
+                theme: "dark",
+            });
             return;
         }
-        
+
         if (trimmedPassword.length < 6) {
-            alert("La contraseña debe tener al menos 6 carácteres (sin contar espacios al inicio o final)");
+            Swal.fire({
+                title: "La contraseña no es válida",
+                text: "La contraseña debe tener al menos 6 carácteres (sin contar espacios al inicio o final)",
+                icon: "warning",
+                theme: "dark",
+            });
             return;
         }
 
         if (trimmedPassword !== trimmedConfirmPassword) {
-            alert("Las contraseñas no coinciden")
+            Swal.fire({
+                title: "Verifica tus contraseñas",
+                text: "Las contraseñas no coinciden",
+                icon: "warning",
+                theme: "dark",
+            });
             return;
         }
 
         setEmail("");
         setPassword("")
         setConfirmPassword("")
-        alert("Registro exitoso")
-    }
 
+        Swal.fire({
+            title: "Registro exitoso",
+            text: "Tu cuenta fue creada correctamente",
+            icon: "success",
+            confirmButtonText: "Aceptar",
+            theme: "dark",
+        });
+    }
 
     return (
         <div className="container register-page">
@@ -79,4 +100,5 @@ const RegisterPage = () => {
         </div>
     )
 }
+
 export default RegisterPage
