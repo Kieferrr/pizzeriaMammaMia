@@ -42,3 +42,12 @@ p {
     background-color: rgb(61, 142, 248);
 }
 
+.register-button:hover {
+    background-color: rgb(95, 159, 241);
+}
+
+.register-button:active {
+    background-color: rgb(44, 134, 252);
+    transform: scale(0.97);
+}
+

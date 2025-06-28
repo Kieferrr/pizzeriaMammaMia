@@ -26,7 +26,7 @@ const LoginPage = () => {
         if (trimmedPassword.length < 6) {
             Swal.fire({
                 title: "La contraseña no es válida",
-                text: "La contraseña debe tener al menos 6 carácteres (sin contar espacios al inicio o final)",
+                text: "La contraseña debe tener al menos 6 caracteres (sin contar espacios al inicio o final)",
                 icon: "warning",
                 theme: "dark",
             });
