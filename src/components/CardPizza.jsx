@@ -3,6 +3,7 @@ import { formatPrice } from "../utils/formatPrice"
 
 const CardPizza = ({img, name, ingredients, price}) => {
     return (
+        <div className="col d-flex justify-content-center">
             <div className="card-pizza">
                 <img src={img} alt="" />
                 <h3 className="card-title">Pizza {name}</h3>
@@ -18,6 +19,7 @@ const CardPizza = ({img, name, ingredients, price}) => {
                     </div>
                 </div>
             </div>
+        </div>
     )
 }
 
