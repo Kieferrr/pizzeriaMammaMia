@@ -1,0 +1,36 @@
+
+.header-div {
+    position: relative;
+    height: 43vh;
+    min-height: 150px;
+    background-image: url(../assets/img/Header.jpg);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(247, 205, 18);
+}
+
+.header-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* ajusta opacidad aquí */
+    z-index: 0;
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+}

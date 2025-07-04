@@ -1,0 +1,15 @@
+.footer {
+    height: 8vh;
+    background-color: rgb(28, 28, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 0;
+    font-size: 1.2em;
+}

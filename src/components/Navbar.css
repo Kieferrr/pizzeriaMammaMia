@@ -1,0 +1,65 @@
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.navbar-style {
+    width: 100%;
+    height: 8vh;
+    min-height: 3.75rem;
+    background-color: rgb(28, 28, 29);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-title p {
+    color: whitesmoke;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.navbar-buttons button {
+    background-color: rgb(39, 38, 38);
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: .3125rem .9375rem;
+    transition: all 0.15s;
+}
+
+.navbar-buttons button:hover {
+    background-color: rgb(54, 53, 53);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-buttons button:active {
+    background-color: rgb(30, 29, 29);
+    transform: scale(0.97);
+}
+
+.navbar-price button {
+    background-color: rgb(39, 38, 38);
+    border: 1px solid rgb(37, 144, 216);
+    color: rgb(37, 144, 216);
+    border-radius: 10px;
+    padding: .3125rem .9375rem;
+    transition: all 0.15s;
+
+}
+
+.navbar-price button:hover {
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0 4px 12px rgba(37, 144, 216, 0.2);
+}
+
+.navbar-price button:active {
+    background-color: rgb(28, 27, 27);
+    transform: scale(0.97);
+}

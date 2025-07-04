@@ -1,4 +1,5 @@
 import { formatPrice } from "../utils/formatPrice"
+import './Navbar.css'
 
 const Navbar = () => {
     const total = 25000;

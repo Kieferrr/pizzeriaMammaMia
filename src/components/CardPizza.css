@@ -1,0 +1,88 @@
+.pizza-container {
+    border-top: 2px solid rgb(247, 205, 18);
+    border-bottom: 4px solid rgb(247, 205, 18);
+    margin-top: 3.125rem;
+    padding: 1.875rem;
+}
+
+
+.card-pizza {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(212, 203, 203);
+    border-radius: .625rem;
+    margin: .625rem .625rem;
+    width: 85%;
+    overflow: hidden;
+}
+
+.card-title {
+    padding: 1.125rem .625rem;
+    border-bottom: 1px solid rgb(212, 203, 203);
+}
+
+.card-ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(212, 203, 203);
+    padding-top: .625rem;
+    font-size: 1.1rem;
+}
+
+.ingredients-title {
+    color: rgb(150, 145, 145);
+    font-size: 1.4rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1.875rem;
+}
+
+.more-button {
+    background-color: white;
+    border: 1px solid black;
+    padding: .4375rem 1.25rem;
+    border-radius: 6px;
+    transition: all 0.15s;
+
+}
+
+.more-button:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.more-button:active {
+    background-color: #eaeaea;
+    transform: scale(0.97);
+}
+
+.add-button {
+    background-color: rgb(29, 27, 27);
+    color: whitesmoke;
+    border: 1px solid rgb(107, 104, 104);
+    border-radius: 6px;
+    padding: .4375rem 1rem;
+    transition: all 0.15s;
+
+}
+
+.add-button:hover {
+    background-color: rgb(45, 43, 43);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+}
+
+.add-button:active {
+    background-color: rgb(20, 18, 18);
+    transform: scale(0.97);
+}
+
+.price-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: .625rem;
+}

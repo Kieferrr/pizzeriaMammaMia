@@ -1,4 +1,5 @@
 import { formatPrice } from "../utils/formatPrice"
+import './CardPizza.css'
 
 
 const CardPizza = ({img, name, ingredients, price}) => {
