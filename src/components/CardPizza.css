@@ -32,7 +32,16 @@
 
 .ingredients-title {
     color: rgb(150, 145, 145);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+}
+
+.ingredients-list {
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.ingredients-list li {
+    margin-bottom: .20rem;
 }
 
 .card-buttons {

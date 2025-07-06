@@ -2,7 +2,7 @@ import { formatPrice } from "../utils/formatPrice"
 import './CardPizza.css'
 
 
-const CardPizza = ({img, name, ingredients, price}) => {
+const CardPizza = ({ img, name, ingredients, price }) => {
     return (
         <div className="col d-flex justify-content-center">
             <div className="card-pizza">
@@ -10,7 +10,11 @@ const CardPizza = ({img, name, ingredients, price}) => {
                 <h3 className="card-title">Pizza {name}</h3>
                 <div className="card-ingredients">
                     <p className="ingredients-title">Ingredientes:</p>
-                    <p>🍕 {ingredients.join(", ")}</p>
+                    <ul className="ingredients-list">
+                        {ingredients.map((ingredient, index) => (
+                            <li key={index}>{ingredient}</li>
+                        ))}
+                    </ul>
                 </div>
                 <div className="card-price">
                     <p className="price-title">Precio: ${formatPrice(price)}</p>
