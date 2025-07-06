@@ -1,3 +1,3 @@
 export function formatPrice (number) {
-    return number.toLocaleString("es-CL");
+    return `$${number.toLocaleString("es-CL")}`;
 }

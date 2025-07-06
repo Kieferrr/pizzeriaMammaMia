@@ -17,7 +17,7 @@ const CardPizza = ({ img, name, ingredients, price }) => {
                     </ul>
                 </div>
                 <div className="card-price">
-                    <p className="price-title">Precio: ${formatPrice(price)}</p>
+                    <p className="price-title">Precio: {formatPrice(price)}</p>
                     <div className="card-buttons">
                         <button className="more-button">Ver Más 👀</button>
                         <button className="add-button">Añadir 🛒</button>
