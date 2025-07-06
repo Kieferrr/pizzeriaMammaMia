@@ -84,3 +84,8 @@
     color: whitesmoke;
     border-radius: 6px;
 }
+
+.cart-img {
+    height: 40px;
+    object-fit: contain;
+}
