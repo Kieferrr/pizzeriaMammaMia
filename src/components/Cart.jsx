@@ -26,6 +26,12 @@ const Cart = () => {
         setCart(newCart)
     }
 
+    let totalPrice = 0;
+    for (let pizza of cart) {
+        totalPrice += pizza.price * pizza.count;
+    }
+
+
     return (
         <div className="container cart-page">
             <div className="container-fluid d-flex flex-column cart">
@@ -40,7 +46,7 @@ const Cart = () => {
                         <button className="plus-button" onClick={() => increaseCount(pizza.id)}>+</button>
                     </div>
                 ))}
-                <p className="total">Total:</p>
+                <p className="total">Total: {formatPrice(totalPrice)}</p>
                 <button className="pay-button">Pagar</button>
             </div>
         </div>
