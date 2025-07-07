@@ -11,7 +11,7 @@
 }
 
 .cart {
-    gap: 10px
+    gap: .625rem
 }
 
 .cart-title {
@@ -21,9 +21,9 @@
 
 .cart-products {
     display: grid;
-    grid-template-columns: 60px 200px 80px 40px 40px 40px;
+    grid-template-columns: 3.75rem 12.5rem 5rem 2.5rem 2.5rem 2.5rem;
     align-items: center;
-    gap: 15px;
+    gap: .9375rem;
 }
 
 .quantity {
@@ -41,8 +41,8 @@
 }
 
 .minus-button {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: white;
     color: #ef4444;
     border: 1px solid #ef4444;
@@ -61,8 +61,8 @@
 }
 
 .plus-button {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: white;
     color: #3b82f6;
     border: 1px solid #3b82f6;
@@ -82,12 +82,12 @@
 .total {
     font-size: 1.9rem;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .pay-button {
-    width: 65px;
-    height: 35px;
+    width: 4.0625rem;
+    height: 2.1875rem;
     border: none;
     background-color: black;
     color: whitesmoke;
@@ -105,6 +105,6 @@
 }
 
 .cart-img {
-    height: 40px;
+    height: 2.5rem;
     object-fit: contain;
 }
