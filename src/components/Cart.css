@@ -5,7 +5,7 @@
 }
 
 .cart-page {
-    height: 78.6vh;
+    height: 80vh;
     padding-top: 5rem;
     padding-left: 15.625rem;
 }
@@ -15,20 +15,28 @@
 }
 
 .cart-title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 .cart-products {
+    display: grid;
+    grid-template-columns: 60px 200px 80px 40px 40px 40px;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
+
+.quantity {
+    text-align: center;
+}
+
 
 .cart-products > * {
     margin: 0;
 }
 
-.quantity {
+.cart-products p {
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -72,8 +80,9 @@
 }
 
 .total {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 .pay-button {

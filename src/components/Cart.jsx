@@ -37,7 +37,7 @@ const Cart = () => {
             <div className="container-fluid d-flex flex-column cart">
                 <p className="cart-title">Detalles del pedido:</p>
                 {cart.map((pizza) => (
-                    <div key={pizza.id} className="cart-products d-flex">
+                    <div key={pizza.id} className="cart-products">
                         <img src={pizza.img} className="cart-img" />
                         <p>{pizza.name}</p>
                         <p>{formatPrice(pizza.price)}</p>
