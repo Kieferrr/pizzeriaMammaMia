@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-price">
-                <button>🛒 Total: ${formatPrice(total)}</button>
+                <button>🛒 Total: {formatPrice(total)}</button>
             </div>
         </nav>
     )
