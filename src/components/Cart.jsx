@@ -1,6 +1,7 @@
 import { pizzaCart } from "../data/pizzas"
 import { useState } from "react"
 import { formatPrice } from "../utils/formatPrice"
+import { capitalizeWords } from "../utils/capitalizeWords";
 import './Cart.css'
 
 const Cart = () => {
@@ -39,7 +40,7 @@ const Cart = () => {
                 {cart.map((pizza) => (
                     <div key={pizza.id} className="cart-products">
                         <img src={pizza.img} className="cart-img" />
-                        <p>{pizza.name}</p>
+                        <p>{capitalizeWords(pizza.name)}</p>
                         <p>{formatPrice(pizza.price)}</p>
                         <button className="minus-button" onClick={() => decreaseCount(pizza.id)}>-</button>
                         <p className="quantity">{pizza.count}</p>
