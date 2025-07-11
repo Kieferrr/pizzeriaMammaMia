@@ -1,14 +1,27 @@
-import { useState } from "react"
-import './Header.css'
+import { useState, useEffect } from "react"
 import CardPizza from "./CardPizza"
 import Header from "./Header"
-import { pizzas } from "../data/pizzas.js"
 import axios from "axios"
 
 const Home = () => {
 
-    const [pizza, setPizza] = useState(pizzas)      
+    const [pizza, setPizza] = useState([])      
+    
+    const url = "http://localhost:5000/api/pizzas";
 
+    const getData = async()  => {
+        try {
+            const { data } = await axios.get(url);
+            setPizza(data)
+        } catch (error) {
+            console.error("Error en la petición:", error)
+        }
+    }
+
+    useEffect(() => {
+        getData()
+    }, [])
+    
     return (
         <div>
             <Header />
