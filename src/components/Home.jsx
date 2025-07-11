@@ -3,6 +3,7 @@ import './Header.css'
 import CardPizza from "./CardPizza"
 import Header from "./Header"
 import { pizzas } from "../data/pizzas.js"
+import axios from "axios"
 
 const Home = () => {
 
