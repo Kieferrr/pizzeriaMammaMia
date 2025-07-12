@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import CardPizza from "./CardPizza"
 import Header from "./Header"
-import axios from "axios"
+import { fetchData } from "../services/api"
 
 const Home = () => {
 
@@ -9,17 +9,8 @@ const Home = () => {
     
     const url = "http://localhost:5000/api/pizzas";
 
-    const getData = async()  => {
-        try {
-            const { data } = await axios.get(url);
-            setPizzas(data)
-        } catch (error) {
-            console.error("Error en la petición:", error)
-        }
-    }
-
     useEffect(() => {
-        getData()
+        fetchData(url).then(setPizzas).catch(console.error)
     }, [])
     
     return (

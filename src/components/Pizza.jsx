@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import './Pizza.css'
-import axios from 'axios';
 import { formatPrice } from '../utils/formatPrice';
 import { capitalizeWords } from '../utils/capitalizeWords';
+import { fetchData } from '../services/api';
 
 const Pizza = () => {
 
@@ -10,19 +10,8 @@ const Pizza = () => {
 
     const urlPizza1 = "http://localhost:5000/api/pizzas/p001"
 
-    const getData = async () => {
-        try {
-            const response = await axios.get(urlPizza1)
-            setPizza(response.data)
-            console.log(response.data);
-        } catch (error) {
-            console.log("Error en la petición:", error)
-        }
-
-    }
-
     useEffect(() => {
-        getData()
+        fetchData(urlPizza1).then(setPizza).catch(console.error);
     }, [])
 
     const emojiDict = {
