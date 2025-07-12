@@ -13,6 +13,7 @@
 
 .desc-card {
     display: flex;
+    align-items: center;
     gap: 30px;
     width: 100%;
     border-radius: 18px;
