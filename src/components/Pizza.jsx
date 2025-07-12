@@ -53,14 +53,13 @@ const Pizza = () => {
                     <h3 className='card-subtitle'>Ingredientes</h3>
                     <div className='card-ing'>
                         {pizza.ingredients.map((ing, index) => (
-                            <span className='ingredients' key={index}>{emojiDict[ing] ?? "🍕" } {capitalizeWords(ing)}</span>
+                            <span className='ingredients' key={index}>{emojiDict[ing] ?? "🍕"} {capitalizeWords(ing)}</span>
                         ))}
                     </div>
                     <button className='cart-button'>🛒 Añadir al carrito</button>
                 </div>
             </div>
         </div>
-
     )
 }
 
