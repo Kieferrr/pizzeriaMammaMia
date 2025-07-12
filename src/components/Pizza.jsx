@@ -25,6 +25,13 @@ const Pizza = () => {
         getData()
     }, [])
 
+    const emojiDict = {
+        mozzarella: "🧀",
+        tomates: "🍅",
+        jamón: "🍖",
+        orégano: "🌿",
+    };
+
     if (!pizza) {
         return <p>Cargando Pizza...</p>
     }
@@ -33,21 +40,23 @@ const Pizza = () => {
 
         <div className='desc-page'>
             <div className='container desc-card'>
-                <img src={pizza.img} alt="" />
+                <div className="img-container">
+                    <img src={pizza.img} alt={pizza.name} />
+                </div>
                 <div className='card-content'>
                     <div className='card-head'>
-                    <h2 className='pizza-name'>{capitalizeWords(pizza.name)}</h2>
-                    <span className='price'>{formatPrice(pizza.price)}</span>
+                        <h2 className='pizza-name'>{capitalizeWords(pizza.name)}</h2>
+                        <span className='price'>{formatPrice(pizza.price)}</span>
                     </div>
                     <h3 className='card-subtitle'>Descripción</h3>
                     <p className='pizza-content'>{pizza.desc}</p>
                     <h3 className='card-subtitle'>Ingredientes</h3>
                     <div className='card-ing'>
                         {pizza.ingredients.map((ing, index) => (
-                            <span key={index}>{capitalizeWords(ing)} </span>
+                            <span className='ingredients' key={index}>{emojiDict[ing] ?? "🍕" } {capitalizeWords(ing)}</span>
                         ))}
                     </div>
-                    <button className='cart-button'>Añadir al carrito</button>
+                    <button className='cart-button'>🛒 Añadir al carrito</button>
                 </div>
             </div>
         </div>
