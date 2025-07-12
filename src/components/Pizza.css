@@ -63,6 +63,11 @@
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     padding: 0px 5px;
+    transition: transform 0.3s ease;
+}
+
+.price:hover {
+    transform: scale(1.1);
 }
 
 .card-subtitle {
@@ -82,6 +87,15 @@
     background-color: rgb(255, 230, 89);
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.cart-button:hover {
+    background-color: rgb(255, 215, 0);
+}
+
+.cart-button:active {
+    transform: scale(0.95);
 }
 
 .ingredients {
@@ -91,6 +105,12 @@
     padding: 3px 5px;
     margin-right: 8px;
     border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.ingredients:hover {
+    transform: scale(1.1);
 }
 
 .pizza-content {
