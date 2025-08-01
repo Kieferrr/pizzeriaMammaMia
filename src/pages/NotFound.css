@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.notFound-page {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound-page h1 {
+    font-size: 6rem;
+}
+
+.notFound-page h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.notFound-content {
+    text-align: center;
+}
+
+.notFound-img {
+    width: 20.75rem;
+}
+
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 10px;
+    color: black;
+    border-radius: 5px;
+    background-color: rgb(252, 251, 251);
+    transition: all 0.15s;
+}
+
+.home-btn:hover {
+    background-color: white;
+}
+
+.home-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
