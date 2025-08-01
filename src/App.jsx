@@ -5,19 +5,22 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import Cart from './pages/Cart';
 import Pizza from './pages/Pizza'
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-    <Navbar />
-    {/* <Home /> */}
-    {/* <RegisterPage /> */}
-    {/* <LoginPage /> */}
-    <Cart />
-    <Pizza />
-    <Footer />
-  </>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/pizza/p001" element={<Pizza />} />
+      </Routes>
+      <Footer />
+    </>
   )
 
 }
