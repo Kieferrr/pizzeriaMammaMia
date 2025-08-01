@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import CardPizza from "./CardPizza"
-import Header from "./Header"
+import CardPizza from "../components/CardPizza"
+import Header from "../components/Header"
 import { fetchData } from "../services/api"
 
 const Home = () => {
