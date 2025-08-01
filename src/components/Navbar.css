@@ -25,41 +25,47 @@
     gap: 1.25rem;
 }
 
-.navbar-buttons button {
+.navbar-buttons .custom-btn {
     background-color: rgb(39, 38, 38);
     border: 1px solid whitesmoke;
     color: whitesmoke;
     border-radius: 10px;
     padding: .3125rem .9375rem;
     transition: all 0.15s;
+    text-decoration: none;
 }
 
-.navbar-buttons button:hover {
+.navbar-buttons .custom-btn:hover {
     background-color: rgb(54, 53, 53);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.navbar-buttons button:active {
+.navbar-buttons .custom-btn:active {
     background-color: rgb(30, 29, 29);
     transform: scale(0.97);
 }
 
-.navbar-price button {
+.navbar-price {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-price .custom-btn {
     background-color: rgb(39, 38, 38);
     border: 1px solid rgb(37, 144, 216);
     color: rgb(37, 144, 216);
     border-radius: 10px;
     padding: .3125rem .9375rem;
     transition: all 0.15s;
-
+    text-decoration: none;
 }
 
-.navbar-price button:hover {
+.navbar-price .custom-btn:hover {
     background-color: rgb(48, 47, 47);
     box-shadow: 0 4px 12px rgba(37, 144, 216, 0.2);
 }
 
-.navbar-price button:active {
+.navbar-price .custom-btn:active {
     background-color: rgb(28, 27, 27);
     transform: scale(0.97);
 }
