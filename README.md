@@ -8,9 +8,9 @@ Este repositorio contiene el proyecto "Pizzería Mamma Mía" de la generación G
 
 2. **Entra a la carpeta del proyecto**
    
-3. **Cambia a la rama deseada (el último hito se encuentra en la rama hito4)**
+3. **Cambia a la rama deseada (el último hito se encuentra en la rama hito5)**
 ```bash
-git checkout hito4
+git checkout hito5
 ```
 4. **Instala las dependencias**
 ```bash
