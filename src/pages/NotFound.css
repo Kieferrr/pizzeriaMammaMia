@@ -12,10 +12,12 @@
 }
 
 .notFound-page h1 {
+    font-family: 'Inter', sans-serif;
     font-size: 6rem;
 }
 
 .notFound-page h2 {
+    font-family: 'Inter', sans-serif;
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -29,6 +31,7 @@
 }
 
 .home-btn {
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     text-decoration: none;
     border: 1px solid black;

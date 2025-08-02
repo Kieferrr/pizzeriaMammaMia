@@ -15,11 +15,13 @@ p {
 }
 
 .login-title h2 {
+    font-family: 'Inter', sans-serif;
     margin-bottom: 1.25rem;
     font-size: 2.5rem;
 }
 
 .login-form {
+    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 1.5625rem;

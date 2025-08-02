@@ -15,11 +15,13 @@
 }
 
 .cart-title {
+    font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
 }
 
 .cart-products {
+    font-family: 'Inter', sans-serif;
     display: grid;
     grid-template-columns: 3.75rem 12.5rem 5rem 2.5rem 2.5rem 2.5rem;
     align-items: center;
@@ -80,12 +82,14 @@
 }
 
 .total {
+    font-family: 'Inter', sans-serif;
     font-size: 1.9rem;
     font-weight: bold;
     margin-top: 1.25rem;
 }
 
 .pay-button {
+    font-family: 'Inter', sans-serif;
     width: 4.0625rem;
     height: 2.1875rem;
     border: none;

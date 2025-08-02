@@ -17,11 +17,13 @@
 }
 
 .card-title {
+    font-family: 'Inter', sans-serif;
     padding: 1.125rem .625rem;
     border-bottom: 1px solid rgb(212, 203, 203);
 }
 
 .card-ingredients {
+    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +47,7 @@
 }
 
 .card-buttons {
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-around;
     padding-bottom: 1.375rem;
@@ -90,6 +93,7 @@
 }
 
 .price-title {
+    font-family: 'Inter', sans-serif;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
