@@ -22,6 +22,7 @@ function App() {
         <Route path="/pizza/p001" element={<Pizza />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
